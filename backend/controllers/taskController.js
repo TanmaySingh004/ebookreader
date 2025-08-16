@@ -27,23 +27,22 @@ res.status(500).json({ message: error.message });
 }
 };
 
-const updateTask = async (
-req,
-res) => {
-const { genre, title, description, publish_date } = req.body;
-try {
-const task = await Task.findById(req.params.id);
-if (!task) return res.status(404).json({ message: 'Task not found' });
-task.genre=genre || task.genre;
-task.title = title || task.title;
-task.description = description || task.description;
-task.publish_date = publish_date || task.publish_date;
-if (req.file) {task.image = `/uploads/${req.file.filename}`; }
-const updatedTask = await task.save();
-res.json(updatedTask);
-} catch (error) {
-res.status(500).json({ message: error.message });
-}
+const updateTask = async (req, res) => {
+const { genre, title, description, publish_date, completed } = req.body;
+    try {
+        const task = await Task.findById(req.params.id);
+        if (!task) {return res.status(404).json({ message: 'Task not found' });}
+        task.genre=genre || task.genre;
+        task.title = title || task.title;
+        task.description = description || task.description;
+        task.publish_date = publish_date || task.publish_date;
+        task.completed = completed || task.completed;
+        if (req.file) {task.image = `/uploads/${req.file.filename}`; }
+        const updatedTask = await task.save();
+        res.json(updatedTask);
+    } catch (error) {
+    res.status(500).json({ message: error.message });
+    }
 };
 
 const deleteTask = async (
