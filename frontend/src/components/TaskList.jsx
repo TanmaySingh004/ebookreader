@@ -16,12 +16,20 @@ const TaskList = ({ tasks, setTasks, setEditingTask }) => {
   };
 
   return (
-    <div>
+    <div className="flex flex-wrap justify-center items-start gap-4">
       {tasks.map((task) => (
-        <div key={task._id} className="bg-gray-100 p-4 mb-4 rounded shadow">
+        <div key={task._id} className="bg-gray-100 p-4 rounded shadow w-60 text-center">
+          {task.image && (
+            <img
+              src={`http://localhost:5001${task.image}`}
+              alt={task.title}
+              className="w-60 h-auto mb-2 rounded"
+            />
+          )}
+          <h2 className="font-bold">{task.genre}</h2>
           <h2 className="font-bold">{task.title}</h2>
           <p>{task.description}</p>
-          <p className="text-sm text-gray-500">Deadline: {new Date(task.deadline).toLocaleDateString()}</p>
+          <p className="text-sm text-gray-500">Published Date: {new Date(task.publish_date).toLocaleDateString()}</p>
           <div className="mt-2">
             <button
               onClick={() => setEditingTask(task)}
