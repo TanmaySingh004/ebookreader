@@ -1,4 +1,4 @@
-**Task Manager Application Overview:The task manager application is designed to help users efficiently manage their tasks and responsibilities by providing a user-friendly interface for creating, viewing, updating, and deleting tasks. It includes essential features such as secure user authentication, allowing individuals to sign up and log in to their accounts, as well as profile management to update personal information. With built-in validation such as input field validation and email validation, the application ensures a seamless user experience while enhancing productivity and organization in both personal and professional settings. **
+**The EBook Reader Management application is designed to provide users with a seamless platform for browsing, bookmarking, and reading digital books across multiple categories. It offers an intuitive interface that allows users to explore a wide variety of genres, track their reading progress, and save favorite books for easy access later. With features like personalized recommendations, category-based organization, and secure user authentication, the application ensures a tailored and engaging reading experience. Built-in validations and user-friendly controls enhance usability, making it an ideal solution for both casual readers and avid book enthusiasts who want to manage their digital library efficiently.**
 
 **This apps **contain** the following features:**
 
@@ -6,12 +6,10 @@
 * Login
 * Logout
 * Update profile
-* Add tasks
-* View tasks
-* Update tasks
-* Delete tasks
-
-**This **app**lication** is**almost **a** precompiled** app**. However, students will develop some features,**such as adding tasks, viewing tasks, updating tasks, and **deleting** tasks**. **Students** will interact with GitHub when they develop the features.**
+* Add Books
+* View Books
+* Update Books
+* Delete Books
 
 ---
 
