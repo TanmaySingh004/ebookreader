@@ -3,7 +3,7 @@
 **This apps **contain** the following features:**
 
 * Signup Create a form component for adding tasks
-* Login 
+* Login Implement input validation for the task title
 * Logout
 * Update profile
 * Add Books
