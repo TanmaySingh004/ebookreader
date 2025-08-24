@@ -2,7 +2,7 @@
 
 **This apps **contain** the following features:**
 
-* Signup
+* Signup v2 update checkout
 * Login
 * Logout
 * Update profile
