@@ -3,7 +3,7 @@
 **This apps **contain** the following features:**
 
 * Signup v2 update checkout Create a component to view all Books
-* Login
+* Login  v2 update checkout Create a component to view all Books
 * Logout
 * Update profile
 * Add Books
